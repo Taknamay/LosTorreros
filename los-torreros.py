@@ -1,6 +1,4 @@
-#!/usr/bin/python3
-
-# input = raw_input
+#!/usr/bin/env python3
 
 license = ''' 
     Copyright 2013, 2014 Jason MacDuffie.
@@ -39,6 +37,14 @@ Copyright 2013, 2014 Jason MacDuffie.
 '''
 
 import random
+
+def read(prompt):
+    try:
+        return input(prompt)
+    except EOFError:
+        print("\n")
+        print("Good bye! Please play another time.")
+        exit()
 
 # Define a method for fleeing combat.
 def flees_combat():
@@ -106,10 +112,10 @@ room_entrance_message = [
 print(
         "*** Welcome to Los Torreros ***\nCopyright 2013, 2014 Jason MacDuffie.\n")
 print("Greetings, player. What is your name?")
-pc_name = input(">>> ")
+pc_name = read(">>> ")
 while (len(pc_name) > 16):
     print("\nYour name cannot be more than 16 letters. What is your name?")
-    pc_name = input(">>> ")
+    pc_name = read(">>> ")
 # If the length is greater than 16 characters, ask for a shorter name.
 print(
         "\nHello, {0} You are a guardsperson of ".format(pc_name + ".")
@@ -122,11 +128,11 @@ print(
         + "maximum hit points. Intel makes it easier to avoid and escape "
         + "combat.")
 # The player chooses a bonus stat.
-bonus_stat = input(">>> ").lower()
+bonus_stat = read(">>> ").lower()
 while (bonus_stat != "power" and bonus_stat != "health" and
         bonus_stat != "intel"):
     print("\nPlease choose either power, health, or intel.")
-    bonus_stat = input(">>> ").lower()
+    bonus_stat = read(">>> ").lower()
 print("\nYou have chosen the " + bonus_stat + " stat. Good choice!")
 # Initialize all player stats and modify the bonus stat.
 max_hp = 25
@@ -181,7 +187,7 @@ print("\nHint: For information about available commands, say 'help'.")
 # Begin the game loop.
 while (game_state == 0):
     moved_rooms = False
-    command = input(">>> ").lower()
+    command = read(">>> ").lower()
     # This begins the help options.
     if (command == "help"):
         print(
@@ -408,4 +414,4 @@ elif (game_state == 2):
 else:
     print("\nCongratulations! You have defeated Bellamor and saved the castle!\nEven though the king is dead, the kingdom will be restored to\npeace and normality, with the help you and the remaining knights.")
 
-input("\nPress enter to close the program at any time...  ")
+read("\nPress enter to close the program at any time...  ")
