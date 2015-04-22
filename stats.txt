@@ -1,7 +1,7 @@
 This document contains the player and enemy stats, and describes in mechanical terms how random calculations in the game are done.
 
 Attacking:
-The attacker rolls a six-sided die, and adds their damage modifier to calculate damage.
+The attacker rolls an n-sided die, and adds their damage modifier to calculate damage.
 
 Fleeing:
 The player rolls a six-sided die, and add their evasion modifier. If this modifier is greater than the enemy's perception, the escape is successful.
