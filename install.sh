@@ -4,7 +4,7 @@ set -e
 
 LIB_TARGET="/usr/local/lib/los-torreros/"
 BIN_TARGET="/usr/local/bin/"
-APPLICATION_DIR="$HOME/.local/share/applications"
+APPLICATION_DIR="/usr/share/applications/"
 
 if [ ! -d "$LIB_TARGET" ]; then
   mkdir $LIB_TARGET
