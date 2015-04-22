@@ -1,0 +1,23 @@
+This is a diagram of all the rooms in the game.
+
+
+
+    0            1            2            3
+
+Northwest    North Wing   North Wing    Northeast
+Watchtower      West        East        Watchtower
+
+
+    4            5            6            7
+West Wing      Chapel      Throne        Royal
+ North                      Room        Quarters
+
+
+    8            9           10           11
+West Wing     Garden       Garden        Servant
+ South         East         West        Quarters
+
+
+   12           13           14           15
+Southwest     Castle        Dining      Southeast
+Watchtower   Entrance        Hall       Watchtower
