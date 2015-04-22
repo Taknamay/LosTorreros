@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Los Torreros
+Comment=Fight against the evil Bellamor
+Exec=los-torreros
+Icon=/usr/local/lib/los-torreros/icon.svg
+Terminal=true
+Type=Application
+Categories=Game;
+Keywords=RolePlaying;
