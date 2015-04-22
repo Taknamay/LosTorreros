@@ -22,8 +22,7 @@ license = '''
 author = ''' 
     Contact information:
 
-    diaspora*:  coldbloodedfirelizard@diasp.org
-    pump.io:    coldbloodedfirelizard@pumpbuddy.us
+    email:      taknamay@gmail.com
     '''
 
 objective = ''' 
