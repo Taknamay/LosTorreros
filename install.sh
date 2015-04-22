@@ -11,5 +11,6 @@ if [ ! -d "$LIB_TARGET" ]; then
 fi
 
 cp los-torreros.py $LIB_TARGET
+cp icon.svg $LIB_TARGET
 cp los-torreros $BIN_TARGET
 cp los-torreros.desktop $APPLICATION_DIR
