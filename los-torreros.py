@@ -422,11 +422,4 @@ elif (game_state == 2):
 else:
     print("\nCongratulations! You have defeated Bellamor and saved the castle!\nEven though the king is dead, the kingdom will be restored to\npeace and normality, with the help you and the remaining knights.")
 
-print("\nPress enter to close the program at any time...  ")
-
-try:
-    input()
-except EOFError:
-    pass
-
 end()
