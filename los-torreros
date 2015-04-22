@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+rlwrap python3 los-torreros.py
