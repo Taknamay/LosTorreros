@@ -12,12 +12,16 @@ rlwrap is used if the program is available, if not then the game will still run 
 
 Just type the following:
 
-    # ./install.sh
+    $ sudo ./install.sh
 
 Then invoke the game with
 
-    # los-torreros
+    $ los-torreros
 
 If you just want to test the game, enter this directory and type
 
     $ python3 los-torreros.py
+
+To remove the game, type the following
+
+    $ sudo ./uninstall.sh
