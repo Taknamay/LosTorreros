@@ -44,7 +44,15 @@ def read(prompt):
     except EOFError:
         print("\n")
         print("Good bye! Please play another time.")
-        exit()
+        end()
+
+def end():
+    print("\nPress enter to close the program at any time...  ")
+    try:
+        input()
+    except EOFError:
+        pass
+    exit()
 
 # Define a method for fleeing combat.
 def flees_combat():
@@ -421,3 +429,4 @@ try:
 except EOFError:
     pass
 
+end()
