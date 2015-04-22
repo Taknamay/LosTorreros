@@ -1,3 +1,16 @@
 #!/usr/bin/env sh
 
-rlwrap python3 los-torreros.py
+set -e
+
+missing_program () {
+    echo "$1 was not found. Exiting."
+    exit
+}
+
+command -v python3 > /dev/null || missing_program "python3"
+
+if command -v rlwrap > /dev/null ; then
+ rlwrap python3 /usr/local/lib/los-torreros/los-torreros.py
+else
+ python3 /usr/local/lib/los-torreros/los-torreros.py
+fi
