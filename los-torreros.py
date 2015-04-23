@@ -420,6 +420,6 @@ if (game_state == 1):
 elif (game_state == 2):
     print("\nYou died! Now the kingdom is sure to fall to the monsters.")
 else:
-    print("\nCongratulations! You have defeated Bellamor and saved the castle!\nEven though the king is dead, the kingdom will be restored to\npeace and normality, with the help you and the remaining knights.")
+    print("\nCongratulations! You have defeated Bellamor and saved the castle!\nEven though the king is dead, the kingdom will be restored to\npeace and normality, with the help of you and the remaining knights.")
 
 end()
