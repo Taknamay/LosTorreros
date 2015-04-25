@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 license = ''' 
-    Copyright 2013, 2014 Jason MacDuffie.
+    Copyright 2013, 2014, 2015 Jason MacDuffie.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ objective = '''
 
 intro = ''' 
 *** Welcome to Los Torreros ***
-Copyright 2013, 2014 Jason MacDuffie.
+Copyright 2013, 2014, 2015 Jason MacDuffie.
 '''
 
 import random
@@ -139,7 +139,7 @@ room_name = [
         ]
 
 print(
-        "*** Welcome to Los Torreros ***\nCopyright 2013, 2014 Jason MacDuffie.\n")
+        "*** Welcome to Los Torreros ***\nCopyright 2013, 2014, 2015 Jason MacDuffie.\n")
 print("Greetings, player. What is your name?")
 pc_name = read(">>> ")
 while (len(pc_name) > 16):
