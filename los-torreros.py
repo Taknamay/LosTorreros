@@ -99,6 +99,7 @@ room_descriptions = [
         "\nYou are currently in the dining hall. There is no merriment here on\nthis day. Replacing the fragrant smell of delicious food is the smell\nof ashes. There are visible scorch marks on the wall. To the north is\nthe garden. To the west is the entrance to the castle. To the east is\nthe southeast watchtower.",
         "\nYou are currently in the southeast watchtower. You see the knight\nElbardo is seriously injured, and is nursing himself by the wall.\nScattered around the room are various musical instruments, but now\nis really not the time to ask Elbardo to play a tune for you. Wind\nhowls down the chamber from above you. This room appears safe enough\nto rest in. To the north is the servant quarters. To the west is the\ndining hall."
         ]
+
 room_entrance_message = [
         "\nYou enter the northwest watchtower.",
         "\nYou enter the west side of the north wing.",
@@ -117,6 +118,26 @@ room_entrance_message = [
         "\nYou enter the dining hall.",
         "\nYou enter the southeast watchtower."
         ]
+
+room_name = [
+        "Northwest watchtower",
+        "North wing, west",
+        "North wing, east",
+        "Northeast watchtower",
+        "West wing, north",
+        "Chapel",
+        "Throne room",
+        "Royal quarters",
+        "West wing, south",
+        "Garden, west",
+        "Garden, east",
+        "Servant quarters",
+        "Southwest watchtower",
+        "Castle entrance",
+        "Dining hall",
+        "Southeast watchtower"
+        ]
+
 print(
         "*** Welcome to Los Torreros ***\nCopyright 2013, 2014 Jason MacDuffie.\n")
 print("Greetings, player. What is your name?")
@@ -314,38 +335,7 @@ while (game_state == 0):
     # This ends the attack command.
     elif (command == "status"):
         print("\nHit Points: " + str(hp) + " / " + str(max_hp))
-        if (current_room == 0):
-            print("Location: Northwest watchtower")
-        elif (current_room == 1):
-            print("Location: North wing, west")
-        elif (current_room == 2):
-            print("Location: North wing, east")
-        elif (current_room == 3):
-            print("Location: Northeast watchtower")
-        elif (current_room == 4):
-            print("Location: West wing, north")
-        elif (current_room == 5):
-            print("Location: Chapel")
-        elif (current_room == 6):
-            print("Location: Throne room")
-        elif (current_room == 7):
-            print("Location: Royal quarters")
-        elif (current_room == 8):
-            print("Location: West wing, south")
-        elif (current_room == 9):
-            print("Location: Garden, west")
-        elif (current_room == 10):
-            print("Location: Garden, east")
-        elif (current_room == 11):
-            print("Location: Servant quarters")
-        elif (current_room == 12):
-            print("Location: Southwest watchtower")
-        elif (current_room == 13):
-            print("Location: Castle entrance")
-        elif (current_room == 14):
-            print("Location: Dining hall")
-        else:
-            print("Location: Southeast watchtower")
+        print("Location: " + room_name[current_room])
         if (combat_state == 0):
             print("Combat: None")
         elif (combat_state == 1):
